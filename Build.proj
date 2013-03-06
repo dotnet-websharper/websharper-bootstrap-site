@@ -16,6 +16,7 @@
   <Target Name="Build" DependsOnTargets="Boot">
     <Warning Text="WebProjectOutputDir =B $(WebProjectOutputDir) E" />
     <Warning Text="OutputPath =B $(OutputPath) E" />
+    <Warning Text="OutDir =B $(OutDir) E" />
     <Exec Command='"$(FAKE)" Build.fsx'
           WorkingDirectory="$(MSBuildThisFileDirectory)"
           LogStandardErrorAsError="True" />
