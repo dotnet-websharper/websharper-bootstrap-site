@@ -34,6 +34,7 @@
   <Import Project="WebSharper.targets" Condition="Exists('WebSharper.targets')" />
   <Import Project="$(WEBSHARPER_HOME)/IntelliFactory.WebSharper.Sitelets.targets" />
   <ItemGroup>
+    <Compile Include="Dependencies.fs" />
     <Compile Include="Actions.fs" />
     <Compile Include="Client.fs" />
     <Compile Include="Controls.fs" />

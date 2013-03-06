@@ -20,7 +20,7 @@ let HomePage =
             Div [Class "hero-unit"] -< [Text "Welcome"]
             Div [Class "row"] -< [
                 yield Div [Class "span2"] -< [
-                    new Controls.EntryPoint()
+                    new Controls.SampleButtons()
                 ]
                 for n in 1 .. 3 do
                     yield Div [Class "span2"] -< [

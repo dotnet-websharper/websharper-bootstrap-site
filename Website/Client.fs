@@ -4,7 +4,7 @@ open IntelliFactory.WebSharper
 open IntelliFactory.WebSharper.Html
 
 [<JavaScript>]
-let EntryPoint () =
+let SampleButtons () =
     let ( @ ) a b =
         Html.Default.NewAttr a b
     let Button (text: string) =
@@ -23,3 +23,7 @@ let EntryPoint () =
         ]
         Content
     ]
+
+[<JavaScript>]
+let EntryPoint () =
+    JavaScript.Log("Loaded OK")

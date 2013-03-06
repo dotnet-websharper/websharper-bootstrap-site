@@ -1,6 +1,7 @@
 ﻿module Site.Skin
 
 open System.Web
+open IntelliFactory.Html
 open IntelliFactory.WebSharper
 open IntelliFactory.WebSharper.Sitelets
 
@@ -23,7 +24,9 @@ let MainTemplate =
 let WithTemplate title menu body : Content<Actions.Action> =
     Content.WithTemplate MainTemplate <| fun context ->
         {
-            Body = body context
+            Body =
+                Div [Style "display:none"] -< [new Controls.EntryPoint()]
+                :: body context
             Menu = menu context
             Project = "Site"
             Title = title
