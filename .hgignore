@@ -1,0 +1,9 @@
+syntax:glob
+*.suo
+*.user
+*/bin
+*/obj
+*~
+.nuget
+Web/Scripts
+packages/*
