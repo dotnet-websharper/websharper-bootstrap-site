@@ -52,8 +52,9 @@
     <Content Include="*.html" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="FSharp.Core">
+    <Reference Include="FSharp.Core, Version=4.3.0.0, publicKeyToken=b03f5f7f11d50a3a, culture=neutral">
       <Private>true</Private>
+      <HintPath>../packages/FSharp.Core.3.0.0.2/lib/net40/FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />

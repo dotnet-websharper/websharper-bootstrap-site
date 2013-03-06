@@ -14,7 +14,13 @@
              Properties="DownloadNuGetExe=true;ProjectDir=$(Root);SolutionDir=$(Root)" />
   </Target>
   <Target Name="Build" DependsOnTargets="Boot">
-    <Exec Command='"$(FAKE)" Build.fsx OutDir="$(OutDir)."'
+    <PropertyGroup Condition=" '$(OutDir)' != '' ">
+      <FakeCommand>"$(FAKE)" Build.fsx OutDir="$(OutDir)."</FakeCommand>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(OutDir)' == '' ">
+      <FakeCommand>"$(FAKE)" Build.fsx</FakeCommand>
+    </PropertyGroup>
+    <Exec Command='$(FakeCommand)'
           WorkingDirectory="$(MSBuildThisFileDirectory)"
           LogStandardErrorAsError="True" />
   </Target>
