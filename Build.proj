@@ -14,10 +14,7 @@
              Properties="DownloadNuGetExe=true;ProjectDir=$(Root);SolutionDir=$(Root)" />
   </Target>
   <Target Name="Build" DependsOnTargets="Boot">
-    <Warning Text="WebProjectOutputDir =B $(WebProjectOutputDir) E" />
-    <Warning Text="OutputPath =B $(OutputPath) E" />
-    <Warning Text="OutDir =B $(OutDir) E" />
-    <Exec Command='"$(FAKE)" Build.fsx'
+    <Exec Command='"$(FAKE)" Build.fsx OutDir="$(OutDir)"'
           WorkingDirectory="$(MSBuildThisFileDirectory)"
           LogStandardErrorAsError="True" />
   </Target>
