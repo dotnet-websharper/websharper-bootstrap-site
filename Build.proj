@@ -1,16 +1,17 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- Bootstraps the build by downloading NuGet.exe and packages -->
   <PropertyGroup>
-    <SolutionDir>$(MSBuildThisFileDirectory)</SolutionDir>
+    <Root>$(MSBuildThisFileDirectory)</Root>
+    <SolutionDir>$(Root)</SolutionDir>
     <FAKEVersion>1.74.127.0</FAKEVersion>
     <FAKE>packages/FAKE.$(FAKEVersion)/tools/Fake.exe</FAKE>
   </PropertyGroup>
-  <Import Project="Build/NuGet.targets" />
+  <Import Project="$(Root)/Build/NuGet.targets" />
   <Target Name="Boot">
-    <MakeDir Directories="$(SolutionDir)/.nuget" />
-    <MSBuild Projects="$(SolutionDir)/Build/NuGet.targets"
+    <MakeDir Directories="$(Root)/.nuget" />
+    <MSBuild Projects="$(Root)/Build/NuGet.targets"
              Targets="RestorePackages"
-             Properties="DownloadNuGetExe=true;ProjectDir=$(SolutionDir);SolutionDir=$(SolutionDir)" />
+             Properties="DownloadNuGetExe=true;ProjectDir=$(Root);SolutionDir=$(Root)" />
   </Target>
   <Target Name="Build" DependsOnTargets="Boot">
     <Exec Command='"$(FAKE)" Build.fsx'
