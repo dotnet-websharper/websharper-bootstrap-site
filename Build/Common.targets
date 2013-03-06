@@ -1,5 +1,5 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <WEBSHARPER_HOME>$(MSBuildThisFileDirectory)/../packages/WebSharper.2.5.0-alpha/tools</WEBSHARPER_HOME>
+    <WEBSHARPER_HOME>$(MSBuildThisFileDirectory)/../packages/WebSharper.2.5.2-alpha/tools</WEBSHARPER_HOME>
   </PropertyGroup>
 </Project>
