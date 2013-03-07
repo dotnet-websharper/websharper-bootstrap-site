@@ -6,6 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{E23A6A0B-8
 		..\..\Build.fsx = ..\..\Build.fsx
 		..\..\Build.proj = ..\..\Build.proj
 		..\..\packages.config = ..\..\packages.config
+		..\..\README.markdown = ..\..\README.markdown
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{7BF31F5B-3DF6-4543-A310-D78A761578CC}"

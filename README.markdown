@@ -10,7 +10,7 @@ version based on WebSharper 2.5.2-alpha.  Current features:
 
   * Builds on [AppHarbor](http://appharbor.com)
 
-  * In fact, a there is a live copy: [http://websharper-bootstrap-site.apphb.com](http://websharper-bootstrap-site.apphb.com)
+  * In fact, there is a live copy: [http://websharper-bootstrap-site.apphb.com](http://websharper-bootstrap-site.apphb.com)
 
   * Supports the F# 3.0 runtime
 
