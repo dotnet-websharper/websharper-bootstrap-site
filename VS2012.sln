@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{E23A6A0B-8B0A-479B-8E2D-4A0603B93C08}"
+	ProjectSection(SolutionItems) = preProject
+		build.fsx = build.fsx
+		README.markdown = README.markdown
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Website", "Website\Website.fsproj", "{17A295FD-96DC-4C3D-9F2B-7C66F0609856}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{6C7BDC96-9CCB-403A-B845-B154B9835E14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+		Release-v4.0|Any CPU = Release-v4.0|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17A295FD-96DC-4C3D-9F2B-7C66F0609856}.Release|Any CPU.ActiveCfg = Release-v4.0|Any CPU
+		{17A295FD-96DC-4C3D-9F2B-7C66F0609856}.Release|Any CPU.Build.0 = Release-v4.0|Any CPU
+		{17A295FD-96DC-4C3D-9F2B-7C66F0609856}.Release-v4.0|Any CPU.ActiveCfg = Release-v4.0|Any CPU
+		{17A295FD-96DC-4C3D-9F2B-7C66F0609856}.Release-v4.0|Any CPU.Build.0 = Release-v4.0|Any CPU
+		{6C7BDC96-9CCB-403A-B845-B154B9835E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C7BDC96-9CCB-403A-B845-B154B9835E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C7BDC96-9CCB-403A-B845-B154B9835E14}.Release-v4.0|Any CPU.ActiveCfg = Release-v4.0|Any CPU
+		{6C7BDC96-9CCB-403A-B845-B154B9835E14}.Release-v4.0|Any CPU.Build.0 = Release-v4.0|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
