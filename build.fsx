@@ -39,16 +39,16 @@ let DefProject (name: string) (ext: string) : B.Project =
         Name = name
     }
 
-let Solution : B.Solution =
-    {
-        Metadata = B.Metadata.Create()
-        Projects =
-            [
-                DefProject "Website" ".fsproj"
-                DefProject "Web" ".csproj"
-            ]
-        RootDirectory = RootDir
-    }
+let Solution =
+    B.Solution
+        (
+            RootDir,
+            Projects =
+                [
+                    DefProject "Website" ".fsproj"
+                    DefProject "Web" ".csproj"
+                ]
+        )
 
 type PackageInfo =
     {
